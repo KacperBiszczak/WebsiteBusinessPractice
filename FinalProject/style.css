@@ -1,19 +1,31 @@
 *{
     box-sizing: border-box;
-    /* padding: 0; */
-    /* margin: 0; */
+    padding: 0;
+    margin: 0;
 }
 
 header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: right; */
+    grid-template-columns: 4fr 6fr;
+
+}
+
+.logo{
+    padding: 1rem 4rem;
 }
 
 #menu {
     position: sticky;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 1em;
+    gap: 1em;
+}
+
+#menu > a{
+    text-decoration: none;
+    color: #3c3c3c;
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
