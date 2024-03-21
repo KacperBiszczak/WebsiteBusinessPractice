@@ -51,6 +51,7 @@ header{
     background: url(./images/photo1.png);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 #banner{
@@ -58,7 +59,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 2em 0px auto auto;
+    margin: 12% 0px auto auto;
     /* margin-right: 0; */
     /* margin-left: auto; */
     right: 0;
@@ -71,7 +72,7 @@ header{
     font-weight: 600;
 }
 
-#banner > div > p{
+#banner > p{
     color: #787878;
 }
 
