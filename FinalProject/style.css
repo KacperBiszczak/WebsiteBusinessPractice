@@ -46,7 +46,7 @@ header{
 
 /* Banner */
 
-#startSection{
+#home{
     min-height: 670px;
     background: url(./images/photo1.png);
     background-size: cover;
@@ -85,7 +85,7 @@ header{
     cursor: pointer;
 }
 
-#startSection > img{
+#home > img{
     /* position: absolute; */
     top: 0;
     overflow: hidden;
