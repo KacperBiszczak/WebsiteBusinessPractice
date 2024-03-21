@@ -46,8 +46,11 @@ header{
 
 /* Banner */
 
-.start{
-    /* min-height: 670px; */
+#startSection{
+    min-height: 670px;
+    background: url(./images/photo1.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #banner{
@@ -81,8 +84,8 @@ header{
     border: 0;
 }
 
-#startSection> img{
-    position: absolute;
+#startSection > img{
+    /* position: absolute; */
     top: 0;
     overflow: hidden;
     z-index: -1;
