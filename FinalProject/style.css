@@ -2,12 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
 }
+
+/* Header */
 
 header{
     display: grid;
     grid-template-columns: 4fr 6fr;
-
 }
 
 .logo{
@@ -18,11 +21,13 @@ header{
 }
 
 #menu {
+    
     position: sticky;
     display: flex;
     justify-content: space-evenly;
     padding: 2em;
     gap: 1em;
+    background-color: #ffffff00;
 }
 
 #menu > a{
@@ -37,4 +42,48 @@ header{
 
 #menu > a:hover{
     color: #10c9c3;
+}
+
+/* Banner */
+
+.start{
+    /* min-height: 670px; */
+}
+
+#banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2em 0px auto auto;
+    /* margin-right: 0; */
+    /* margin-left: auto; */
+    right: 0;
+    padding: 1rem;
+    width: 50%;
+}
+
+#banner h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#banner > div > p{
+    color: #787878;
+}
+
+.contactBtn{
+    max-width: fit-content;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #10c9c3;
+    border: 0;
+}
+
+#startSection> img{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
 }
