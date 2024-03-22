@@ -23,7 +23,7 @@ header{
     justify-content: left;
 }
 
-#menu {
+nav {
     
     display: flex;
     justify-content: space-evenly;
@@ -32,7 +32,7 @@ header{
     background-color: #ffffff00;
 }
 
-#menu > a{
+nav > a{
     text-decoration: none;
     color: #191919;
     font-size: 1em;
@@ -42,7 +42,7 @@ header{
     text-transform: uppercase;
 }
 
-#menu > a:hover{
+nav > a:hover{
     color: #10c9c3;
 }
 
