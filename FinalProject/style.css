@@ -4,6 +4,7 @@
     margin: 0;
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -11,6 +12,8 @@
 header{
     display: grid;
     grid-template-columns: 4fr 6fr;
+    position: sticky;
+    top: 0;
 }
 
 .logo{
