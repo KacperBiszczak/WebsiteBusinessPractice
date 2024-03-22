@@ -47,11 +47,19 @@ header{
 /* Banner */
 
 #home{
-    min-height: 670px;
+    /* min-height: 670px; */
+    /* height: 670px; */
     background: url(./images/photo1.png);
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+#bannerContainer{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 80%;
 }
 
 #banner{
@@ -59,11 +67,11 @@ header{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 12% 0px auto auto;
+    /* margin: 12% 0px auto auto; */
     /* margin-right: 0; */
     /* margin-left: auto; */
     right: 0;
-    padding: 1rem;
+    padding: 11rem 2rem;
     width: 50%;
 }
 
