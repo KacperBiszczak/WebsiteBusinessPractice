@@ -26,7 +26,7 @@ header{
     padding-bottom: 200px;
     display: flex;
     flex-direction: column;
-
+    
     gap: 1em;
     
 }
@@ -42,11 +42,12 @@ header{
 
 nav{
     display: flex;
+    align-items: center;
     gap: 1em;
 }
 
 nav a{
-    display: block;
+    /* display: block; */
     text-decoration: none;
     color: black;
     text-transform: uppercase;
