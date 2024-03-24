@@ -52,6 +52,7 @@ nav a{
     text-transform: uppercase;
     transition: .2s;
     vertical-align: middle;
+    font-weight: 600;
 }
 
 nav a:hover{
