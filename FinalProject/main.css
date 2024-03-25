@@ -23,8 +23,8 @@ header{
 .banner{
     width: 50%;
     margin-left: auto;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 250px;
+    padding-bottom: 250px;
     display: flex;
     flex-direction: column;
     
