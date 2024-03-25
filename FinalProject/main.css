@@ -53,7 +53,11 @@ nav a:hover{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 3.17em;
+}
+
+h2{
+    font-size: 2.5em;
 }
 
 .banner > p{
@@ -76,6 +80,12 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-    padding: 10em;
+    gap: 2.5em;
+    padding: 8em;
+    text-align: center;
+}
+
+#about p{
+    font-size: 1.33em;
+    color: #787878;
 }
