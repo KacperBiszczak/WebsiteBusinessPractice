@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-.home{
+#home{
     background-image: url(./images/photo1.png);
     background-size: cover;
     background-position: center;
@@ -87,3 +87,4 @@ h2{
     font-size: 1.33em;
     color: #787878;
 }
+
