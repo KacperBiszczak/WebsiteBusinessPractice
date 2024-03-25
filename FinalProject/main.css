@@ -73,7 +73,7 @@ h2{
     padding: 1.5em 3em;
 }
 
-#about{
+.about{
     display: flex;
     flex-direction: column;
     justify-content: center;
