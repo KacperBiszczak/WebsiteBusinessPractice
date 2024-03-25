@@ -69,3 +69,12 @@ h1{
     background-color: #10c9c3;
     padding: 1.5em 3em;
 }
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 10em;
+}
