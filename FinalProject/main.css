@@ -20,6 +20,25 @@ header{
     padding: 1em;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+nav a{
+    /* display: block; */
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: .2s;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: aquamarine;
+}
+
 .banner{
     width: 50%;
     margin-left: auto;
@@ -39,23 +58,4 @@ header{
 .container{
     padding-left: 100px;
     padding-right: 100px;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-nav a{
-    /* display: block; */
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    transition: .2s;
-    font-weight: 600;
-}
-
-nav a:hover{
-    color: aquamarine;
 }
