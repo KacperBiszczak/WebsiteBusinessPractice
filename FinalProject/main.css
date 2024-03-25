@@ -88,3 +88,9 @@ h2{
     color: #787878;
 }
 
+.skills > div{
+    width: 50%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
