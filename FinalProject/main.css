@@ -47,15 +47,25 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     
-    gap: 1em;
+    gap: 2em;
     
 }
 
-.banner > a{
-    display: block;
+h1{
+    font-size: 3em;
 }
 
-.container{
-    padding-left: 100px;
-    padding-right: 100px;
+.banner > p{
+    font-size: 1.5em;
+    color: #787878;
+}
+
+.button{
+    width: max-content;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #10c9c3;
+    padding: 1.5em 3em;
 }
