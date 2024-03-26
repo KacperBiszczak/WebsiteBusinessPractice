@@ -131,5 +131,18 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 6em 2em;
+    gap: 2em;
+    color: #fff;
+    
 }
 
+.numbers > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.numbers p{
+    width: max-content;
+}
