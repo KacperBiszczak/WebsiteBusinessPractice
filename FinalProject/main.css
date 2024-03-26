@@ -130,7 +130,7 @@ h3{
     background-color: #10c9c3;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 6em 2em;
     gap: 2em;
     color: #fff;
@@ -143,6 +143,12 @@ h3{
     gap: 1em;
 }
 
+.numbers span, strong{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 .numbers p{
     width: max-content;
+    text-transform: uppercase;
 }
