@@ -143,7 +143,7 @@ h3{
     gap: 1em;
 }
 
-.numbers span, strong{
+.numbers strong{
     font-size: 1.5em;
     font-weight: 500;
 }
