@@ -132,9 +132,9 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 6em 2em;
-    gap: 2em;
+    gap: 4em;
     color: #fff;
-    
+    overflow: hidden;
 }
 
 .numbers > div{
