@@ -125,3 +125,11 @@ progress {
 h3{
     font-size: 1.5em;
 }
+
+.numbers{
+    background-color: #10c9c3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
