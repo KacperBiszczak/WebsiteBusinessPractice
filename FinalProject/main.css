@@ -152,3 +152,15 @@ h3{
     width: max-content;
     text-transform: uppercase;
 }
+
+.workImages{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.workImages img{
+    height: 25vw;
+    width: calc(25vw);
+    object-fit: cover;
+}
