@@ -84,7 +84,7 @@ h2{
     text-align: center;
 }
 
-#about p{
+.description{
     font-size: 1.33em;
     color: #787878;
 }
@@ -119,4 +119,8 @@ progress {
 
   progress::-moz-progress-bar {
     background-color: #d8d8d8;
+}
+
+h3{
+    font-size: 1.5em;
 }
