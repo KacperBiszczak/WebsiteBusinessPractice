@@ -106,13 +106,16 @@ progress {
     border-radius: 7px; 
     width: 100%;
     height: 5px;
-  }
+}
+
   progress::-webkit-progress-bar {
     background-color: #d8d8d8;
-  }
+}
+
   progress::-webkit-progress-value {
     background-color: #10c9c3;
-  }
+}
+
   progress::-moz-progress-bar {
-    /* style rules */
-  }
+    background-color: #d8d8d8;
+}
