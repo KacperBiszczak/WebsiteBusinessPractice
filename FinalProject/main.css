@@ -9,6 +9,7 @@
 }
 
 body{
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -312,7 +313,7 @@ video{
     text-align: center;
     gap: 1.5em;
     background-color: #f5f5f5;
-    padding: 4em 8em;
+    padding: 4em 20%;
 }
 
 .formContactGrid{
@@ -333,4 +334,24 @@ video{
 #contact textarea{
     padding: 1em;
     border: 0;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 4em;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+footer h4{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+footer p{
+    font-size: 1.25em;
+    font-family: "Nunito Sans", sans-serif;
+    color: #bcbcbc;
 }
