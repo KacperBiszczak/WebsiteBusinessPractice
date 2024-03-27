@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #home{
     background-image: url(./images/photo1.png);
     background-size: cover;
