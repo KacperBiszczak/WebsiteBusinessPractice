@@ -334,6 +334,7 @@ video{
 #contact textarea{
     padding: 1em;
     border: 0;
+    resize: none;
 }
 
 footer{
