@@ -159,8 +159,43 @@ h3{
     grid-template-rows: repeat(2, 1fr);
 }
 
-.workImages img{
+.workImages > div{
+    position: relative;
     height: 25vw;
     width: calc(25vw);
+}
+
+.workImages img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    backface-visibility: hidden;
+    transition: all .3s ease;
+}
+
+.wIcon{
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    padding: 40%;
+
+}
+
+.workImages > div:hover > img{
+    filter: brightness(.5);
+}
+
+.wIcon{
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.workImages > div:hover .wIcon{
+    opacity: 1;
 }
