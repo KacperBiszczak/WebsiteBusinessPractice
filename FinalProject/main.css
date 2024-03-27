@@ -224,14 +224,14 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4em;
-    gap: .5em;
+    padding: 6em;
+    gap: 1em;
     text-align: center;
 }
 
 video{
     width: 90%;
-    margin: 2em;
+    margin: 2em 0;
 }
 
 #services{
