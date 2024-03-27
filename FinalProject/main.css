@@ -202,6 +202,7 @@ h3{
 
 .workImages > div:hover .wIcon{
     opacity: 1;
+    cursor: pointer;
 }
 
 #work > a{
