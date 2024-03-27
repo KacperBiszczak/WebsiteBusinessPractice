@@ -215,3 +215,18 @@ h3{
     font-size: 1em;
     font-weight: 600;
 }
+
+#process{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+    gap: .5em;
+    text-align: center;
+}
+
+video{
+    width: 90%;
+    margin: 2em;
+}
