@@ -293,3 +293,14 @@ video{
     transform: scale(1.5);
     opacity: 1;
 }
+
+.clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5em 1em;
+}
+
+.clients > img{
+    width: 12.5%;
+}
