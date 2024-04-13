@@ -369,3 +369,12 @@ footer p {
     font-family: "Nunito Sans", sans-serif;
     color: #bcbcbc;
 }
+
+@media only screen and (max-width:900px) {
+    #services{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2em;
+    }
+}
