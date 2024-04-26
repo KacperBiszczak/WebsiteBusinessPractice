@@ -370,11 +370,41 @@ footer p {
     color: #bcbcbc;
 }
 
-@media only screen and (max-width:900px) {
+/* xs */
+@media (min-width: 475px){
+
+}
+
+/* sm */
+@media (min-width: 640px){
+
+}
+
+/* md */
+@media (min-width: 768px){
+
+}
+
+/* lg */
+@media (min-width: 1024px){
+
+}
+
+/* xl */
+@media (min-width: 1280px){
+
+}
+
+/* 2xl */
+@media (min-width: 1536px){
+
+}
+
+/* @media (max-width:900px) {
     #services{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 2em;
     }
-}
+} */
