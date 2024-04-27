@@ -383,6 +383,9 @@ footer p {
     color: #bcbcbc;
 }
 
+/* Remove font styling for skills in ems */
+/* Change it to set font-size in body */
+
 /* 2xl */
 @media (max-width: 1536px){
 
@@ -395,6 +398,7 @@ footer p {
 
 /* lg */
 @media (max-width: 1024px){
+
     footer{
         flex-direction: column;
         justify-content: center;
