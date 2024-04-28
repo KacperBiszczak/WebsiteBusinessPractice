@@ -383,9 +383,6 @@ footer p {
     color: #bcbcbc;
 }
 
-/* Remove font styling for skills in ems */
-/* Change it to set font-size in body */
-
 /* 2xl */
 @media (max-width: 1536px){
 
@@ -404,10 +401,6 @@ footer p {
         justify-content: center;
     }
 
-    .skills>div {
-        padding: 8em 4em;
-    }
-
 }
 
 /* md */
@@ -419,21 +412,6 @@ footer p {
     #services {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-    }
-
-    .skills>div {
-        padding: 8em 3em;
-        /* text-wrap: wrap; */
-    }
-
-    .skills h2{
-        font-size: 2em;
-    }
-
-    .skills label{
-        font-size: .8em;
-        text-wrap: wrap;
-        gap: auto;
     }
 }
 
@@ -454,20 +432,6 @@ footer p {
         margin: auto;
     }
 
-    .skills label{
-        font-size: .6em;
-        justify-content: space-between;
-    }
-
-    .skills>div {
-        padding: 8em 1.5em;
-        /* text-wrap: wrap; */
-    }
-
-    .skills h2{
-        font-size: 1.5em;
-    }
-    
     .quote{
         padding: 10em 2em;
     }
@@ -497,41 +461,9 @@ footer p {
 /* xs */
 @media (max-width: 475px){
 
-    .skills > div {
-        padding: 8em 1em;
-        /* text-wrap: wrap; */
-    }
-
-    .skills h2{
-        font-size: 1em;
-    }
-
-    .skills label{
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        gap: 0;
-        font-size: .5em;
-    }
-
-    .skills label > div{
-        text-align: left;
-        margin-left: 0;
-        margin-right: auto;
-    }
-
     #services {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
 
 }
-
-/* @media (max-width:900px) {
-    #services{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 2em;
-    }
-} */
