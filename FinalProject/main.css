@@ -1,0 +1,469 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+}
+
+#home {
+    background-image: url(./images/photo1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 2em;
+    align-items: center;
+}
+
+.logo > img{
+    display: block;
+    margin: auto 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    /* display: block; */
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: .2s;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: aquamarine;
+}
+
+.banner {
+    width: 50%;
+    margin-left: auto;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.banner>p {
+    font-size: 1.5em;
+    color: #787878;
+}
+
+.button {
+    width: max-content;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #10c9c3;
+    padding: 1.5em 3em;
+    border: 0;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    padding: 8em;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.33em;
+    color: #787878;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.skills>div {
+    width: 50%;
+    margin-right: auto;
+    background-color: #f8f9f9;
+    display: flex;
+    flex-direction: column;
+    padding: 8em 6em;
+    gap: 2em;
+}
+
+.skills label {
+    font-weight: 700;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    gap: 1em;
+}
+
+progress {
+    border-radius: 7px;
+    width: 100%;
+    height: 5px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #d8d8d8;
+}
+
+progress::-webkit-progress-value {
+    background-color: #10c9c3;
+}
+
+progress::-moz-progress-bar {
+    background-color: #d8d8d8;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.numbers {
+    background-color: #10c9c3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 6em 2em;
+    gap: 4em;
+    color: #fff;
+}
+
+.numbers>div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.numbers strong {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.numbers p {
+    width: max-content;
+    text-transform: uppercase;
+}
+
+.workImages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.workImages>div {
+    position: relative;
+    height: 25vw;
+    width: 25vw;
+}
+
+.workImages img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    transition: all .3s ease;
+}
+
+.wIcon {
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    padding: 40%;
+
+}
+
+.workImages>div:hover>img {
+    filter: brightness(.5);
+}
+
+.wIcon {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.workImages>div:hover .wIcon {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#work>a {
+    display: block;
+    text-align: center;
+    padding: 3em;
+    color: #8e8e8e;
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6em;
+    gap: 1em;
+    text-align: center;
+}
+
+video {
+    width: 90%;
+    margin: 2em 0;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 4em 2em;
+    gap: 2em 4em;
+}
+
+#services>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.quote {
+    position: relative;
+    background-color: #10c9c3;
+    text-align: center;
+    padding: 10em 6em;
+    gap: 1em;
+}
+
+.quote blockquote {
+    font-size: 2.2em;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.quote cite {
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.pagination {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    bottom: 2em;
+    margin: auto;
+    gap: 10px;
+}
+
+.pagination span {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .8;
+    margin: 5px;
+}
+
+.pagination span.active {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5% 1em;
+}
+
+.clients>img {
+    width: 10%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+    background-color: #f5f5f5;
+    padding: 4em 20%;
+}
+
+.formContactGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+#name {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#email {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#title {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#comment {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    padding: 1em;
+    border: 0;
+    resize: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 4em;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+footer p {
+    font-size: 1.25em;
+    font-family: "Nunito Sans", sans-serif;
+    color: #bcbcbc;
+}
+
+/* 2xl */
+@media (max-width: 1536px){
+
+}
+
+/* xl */
+@media (max-width: 1280px){
+
+}
+
+/* lg */
+@media (max-width: 1024px){
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+/* md */
+@media (max-width: 768px){
+    header{
+        gap: 4rem;
+    }
+
+    #services {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/* sm */
+@media (max-width: 640px){
+    .banner {
+        width: 100%;
+        /* margin: 1em */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 180px;
+        padding-bottom: 320px;
+    }
+
+    .banner > .button{
+        display: block;
+        margin: auto;
+    }
+
+    .quote{
+        padding: 10em 2em;
+    }
+
+    .formContactGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, .3fr) 1fr;
+    }
+
+    #name {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    #email {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    #title {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    #comment {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+}
+
+/* xs */
+@media (max-width: 475px){
+
+    #services {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+}
