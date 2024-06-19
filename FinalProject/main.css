@@ -8,9 +8,12 @@
     scroll-behavior: smooth;
 }
 
+html{
+    font-size: 16px;
+}
+
 body {
     width: 100%;
-    font-size: 16px;
 }
 
 #home {
@@ -66,16 +69,17 @@ nav a:hover {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .banner>p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #787878;
+    margin-right: 6rem;
 }
 
 .button {
@@ -100,8 +104,12 @@ h2 {
     text-align: center;
 }
 
+.about img{
+    height: 8rem;
+}
+
 .description {
-    font-size: 1.33em;
+    font-size: 1.33rem;
     color: #787878;
     font-family: "Nunito Sans", sans-serif;
 }
@@ -145,14 +153,15 @@ progress::-moz-progress-bar {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .numbers {
     background-color: #10c9c3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
     padding: 6em 2em;
     gap: 4em;
     color: #fff;
@@ -160,8 +169,13 @@ h3 {
 
 .numbers>div {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1em;
+}
+
+.numbers img{
+    height: 3rem;
 }
 
 .numbers strong {
@@ -230,7 +244,7 @@ h3 {
     background-color: #f5f5f5;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -274,7 +288,7 @@ video {
 }
 
 .quote blockquote {
-    font-size: 2.2em;
+    font-size: 2.2rem;
     color: #fff;
     font-weight: 500;
     margin-bottom: 1em;
@@ -298,8 +312,8 @@ video {
 .pagination span {
     display: inline-block;
     position: relative;
-    width: 10px;
-    height: 10px;
+    width: .8rem;
+    height: .8rem;
     border-radius: 50%;
     background-color: #fff;
     opacity: .8;
@@ -390,11 +404,19 @@ footer p {
 
 /* xl */
 @media (max-width: 1280px){
-
+    .numbers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 /* lg */
 @media (max-width: 1024px){
+
+    html{
+        font-size: 14px;
+    }
 
     footer{
         flex-direction: column;
@@ -405,6 +427,11 @@ footer p {
 
 /* md */
 @media (max-width: 768px){
+    
+    html{
+        font-size: 12px;
+    }
+    
     header{
         gap: 4rem;
     }
@@ -417,14 +444,23 @@ footer p {
 
 /* sm */
 @media (max-width: 640px){
+    
+    html{
+        font-size: 10px;
+    }
+    
     .banner {
         width: 100%;
-        /* margin: 1em */
+        /* margin: 1em; */
         text-align: center;
         justify-content: center;
         align-items: center;
         padding-top: 180px;
         padding-bottom: 320px;
+    }
+
+    .banner>p {
+        margin: 2em;
     }
 
     .banner > .button{
@@ -459,11 +495,29 @@ footer p {
 }
 
 /* xs */
-@media (max-width: 475px){
+@media screen and (max-width: 525px){
+
+    html{
+        font-size: 8px;
+    }
 
     #services {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
 
+}
+
+@media screen and (max-width: 420px) {
+    html{
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .numbers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
