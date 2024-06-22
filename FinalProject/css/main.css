@@ -327,6 +327,10 @@ video {
     gap: 1em;
 }
 
+#services img{
+    height: 4rem;
+}
+
 .quote {
     position: relative;
     background-color: #10c9c3;
@@ -599,7 +603,7 @@ footer p {
     
     #contact 
     {
-        padding: 2rem 10%;
+        padding: 4rem 10%;
     }
 }
 
