@@ -17,7 +17,7 @@ body {
 }
 
 #home {
-    background-image: url(/images/photo1.png);
+    background-image: url(/images/bannerImg.png);
     background-size: cover;
     background-position: center;
 }
@@ -31,6 +31,7 @@ header {
     align-items: center;
 }
 
+
 .logo{
     height: 1.75rem;
 }
@@ -39,6 +40,10 @@ header {
     display: block;
     margin: auto 0;
     height: 100%;
+}
+
+.btnMenu{
+    display: none;
 }
 
 nav {
@@ -245,6 +250,10 @@ h3 {
     filter: brightness(.5);
 }
 
+.workImages>div>img{
+    object-fit: cover;
+}
+
 .wIcon {
     opacity: 0;
     transition: opacity .3s ease;
@@ -305,7 +314,7 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 1.5rem;
+    font-size: .5rem;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #fff;
@@ -353,12 +362,13 @@ video {
 }
 
 .pagination {
+    display: flex;
     position: absolute;
-    left: 40%;
-    right: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 2em;
     margin: auto;
-    gap: 10px;
+    gap: .2rem;
 }
 
 .pagination span {
@@ -532,7 +542,7 @@ footer p {
     }
     
     .banner {
-        width: 100%;
+        width: 80%;
         /* margin: 1em; */
         text-align: center;
         justify-content: center;
@@ -589,6 +599,7 @@ footer p {
         font-size: 8px;
     }
 
+
     #services {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -601,6 +612,11 @@ footer p {
         font-size: 6px;
     }
     
+    .btnPlay{
+        width: 2rem;
+        height: 2rem;
+    }
+
     #contact 
     {
         padding: 4rem 10%;
@@ -620,8 +636,16 @@ footer p {
         font-size: 1.5rem;
     }
 
-    .banner{
-        padding: 10rem 0;
+    header > div{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .btnMenu{
+        display: block;
+        cursor: pointer;
     }
     
     .skills > div{
@@ -638,8 +662,13 @@ footer p {
         grid-template-rows: repeat(4, 1fr);
     }
 
-    #contact 
+    #contact > form
     {
-        padding: 2rem;
+        padding: .5rem;
+        min-width: 80vw;
+    }
+
+    #contact input{
+        width: 100%;
     }
 }
