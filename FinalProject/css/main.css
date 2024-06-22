@@ -464,9 +464,16 @@ footer p {
     }
 
     footer{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         padding: 8em;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    footer > div:nth-child(2){
+        flex-basis: 100%;
     }
 
 }
