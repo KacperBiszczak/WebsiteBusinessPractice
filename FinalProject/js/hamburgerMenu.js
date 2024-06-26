@@ -4,11 +4,11 @@ const nav = document.querySelector("nav");
 function showNav(){
     if(btnMenu.classList.contains("active")){
         btnMenu.classList.remove("active");
-        nav.style.transform = "scaleX(0);";
-        nav.displa
+        nav.style.display = "none";
     }
     else{
         btnMenu.classList.add("active")
+        nav.style.display = "flex";
     }
 }
 
