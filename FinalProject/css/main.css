@@ -519,13 +519,17 @@ footer p {
     .workImages {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .workImages>div {
         position: relative;
         height: 50vw;
         width: 50vw;
+    }
+
+    .workImages>div:nth-child(n+5){
+        display: none;
     }
 
     #services {
