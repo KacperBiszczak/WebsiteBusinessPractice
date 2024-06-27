@@ -222,6 +222,8 @@ h3 {
     position: relative;
     height: 100%;
     width: 100%;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 .workImages img {
@@ -628,6 +630,10 @@ footer p {
 }
 
 @media screen and (max-width: 320px) {
+    html{
+        min-width: 200px;
+    }
+    
     header{
         position: relative;
         display: flex;
