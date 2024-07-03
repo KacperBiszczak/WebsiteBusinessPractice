@@ -72,7 +72,7 @@ nav a:hover {
 .banner {
     width: 50%;
     margin-left: auto;
-    padding: 7.5rem 0;
+    padding: 15rem 0;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -126,19 +126,24 @@ h2 {
 
 .skills{
     display: flex;
+    align-items: center;
+    background-color: #f8f9f9;
 }
 
 .skills>div {
     width: 50%;
     margin-right: auto;
-    background-color: #f8f9f9;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
 .skills>div:nth-child(1){
-    padding: 6em 6em;
+    padding: 6em;
+}
+
+.skills>div:nth-child(2){
+    background-color: #fdfdfd;
 }
 
 .skills > div > img{
@@ -346,7 +351,7 @@ video {
     position: relative;
     background-color: #10c9c3;
     text-align: center;
-    padding: 10em 6em;
+    padding: 16em 6em;
     gap: 1em;
 }
 
