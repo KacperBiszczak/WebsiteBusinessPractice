@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -13,8 +13,15 @@
     
     <div id="home">
         <header>
-            <div class="logo">
-                <img src="./logo.png" alt="logo">
+            <div>
+
+                <div>
+                    <img src="/images/logo.png" alt="logo" class="logo">
+                </div>
+                <div class="btnMenu">
+                    &#9776;
+                </div>
+                
             </div>
             <nav>
                 <a href="#home">home</a>
@@ -48,7 +55,7 @@
                 Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.
             </p>
 
-            <img src="./images/signature.png" alt="Signature" height="100px">
+            <img src="./images/signature.png" alt="Signature">
         </section>
 
         <section class="skills">
@@ -70,6 +77,10 @@
                     <progress id="progMarket" value="65" max="100"></progress>
                 </div>
 
+            </div>
+
+            <div>
+                <img src="./images/skillsBgImg.jpg" alt="A closed book with a ribbon tied around it in a bow, alongside which lies a pen">
             </div>
         </section>
 
@@ -122,35 +133,35 @@
 
         <div class="workImages">
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product1.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product2.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product3.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product4.png" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product5.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product6.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product7.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
             <div>
-                <img src="./images/worksImages/workImg1.png" alt="Image of work">
+                <img src="./images/worksImages/product8.jpg" alt="Image of work">
                 <span class="wIcon"><img src="./images/icons/look.svg" alt="Eye icon"></span>    
             </div>
         </div>
@@ -168,11 +179,15 @@
             over that, third sixth gathered female creeping bearing behold years.
         </p>
         
-        <video controls>
-            <source src="./images/video1.mp4" type="video/mp4">
-            <!-- <source src="movie.ogg" type="video/ogg"> -->
-            Your browser does not support the video tag.
-        </video>
+        <div class="videoContainer">
+            <video muted>
+                <source src="./images/video1.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+
+            <span class="btnPlay"> <span>&#x25B6</span> </span>
+        </div>
 
     </article>
 
@@ -305,7 +320,6 @@
 
     <footer>
 
-        <!-- MAKE MAYBE WITH GRID -->
         <div>
             <h4>Piroll Design, Inc.</h4>
             <p> © 2017 Piroll. All rights reserved. </p>
@@ -340,5 +354,7 @@
 
     </footer>
 
+    <script src="./js/videoScript.js"></script>
+    <script src="./js/hamburgerMenu.js"></script>
 </body>
 </html>
